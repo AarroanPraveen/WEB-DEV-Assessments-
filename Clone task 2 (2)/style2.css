@@ -1,0 +1,777 @@
+@font-face {
+    font-family: Teko;
+    src: url(/FONT/Teko-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: lato;
+    src: url(/FONT/Lato-Regular.ttf);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #FFFFFF;
+    color: #ffffff;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: #231651;
+    color: #FFFFFF;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+}
+
+header nav a {
+    margin: 0 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.search-button {
+    padding: 5px;
+    font-size: 1em;
+}
+
+
+.MOVIE-LIST {
+    padding: 48px;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+.Featuring-movie {
+    display: flex;
+    flex-direction: column;
+    background-color: #4dccbd;
+    padding: 24px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.Featuring-movie .movie-posters {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.Featuring-movie .movie-descriptions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.Featuring-movie .movie-descriptions p {
+    width: 70%;
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+.Featuring-movie .movie-descriptions button {
+    width: 35%;
+    padding: 30px 60px;
+    font-size: 2.2em;
+    
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    align-self: flex-start;
+    margin: 40px;
+}
+
+
+.movie-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.movie {
+    width: 48%;
+    background-color: #231651;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movie .movie-posters {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.movie .movie-descriptions p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.movie .movie-descriptions button {
+    padding: 15px 100px;
+    font-size: 1.2em;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+.solo-movies-together {
+    display: flex;
+    background-color: #231651;
+    padding: 16px;
+    margin-top: 32px;
+    border-radius: 8px;
+    gap: 16px;
+}
+
+.solo-movies-together .movie-posters {
+    width: 50%;
+    height: auto;
+}
+
+.solo-movies-together .movie-descriptions {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.solo-movies-together .movie-descriptions p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.solo-movies-together .movie-descriptions button {
+    padding: 15px 60px;
+    font-size: 1.2em;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+
+
+@media (min-width: 360px) and (max-width: 719px) {
+
+
+    body {
+        margin: -10px;
+        font-family: 'Lato', sans-serif;
+        color: #FFFFFF;
+        background-color: #ffffff;
+        width: 353px;
+        
+    }
+
+
+    .search-button {
+        padding: 5px;
+        font-size: 1em;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+
+
+
+    header {
+        padding: 16px;
+        width: 370px;
+        background-color: #eef36a;
+    }
+
+    header h1 {
+        font-size: 2em;
+        color: #000000;
+    }
+
+    .MOVIE-LIST {
+        padding: 16px;
+        position: relative;
+        right: -10px;
+
+       
+        
+    }
+
+    .Featuring-movie {
+        display: flex;
+        background-color: #4dccbd;
+        box-shadow: 10px 10px gray;
+        padding: 16px;
+        margin-top: 32px;
+        border-radius: 8.1px;
+        gap: 16px;    
+        
+    }
+
+    .Featuring-movie  .movie-descriptions {
+        flex-direction: column;
+        width: 150%;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .Featuring-movie .movie-posters{
+        width: 100%;
+        height: auto;
+    }
+    .Featuring-movie  .movie-descriptions button {
+        padding: 15px 80px;
+        font-size: 1.3em;
+        background-color: #000000;
+        color: #FFFFFF;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        margin: 2%;
+        width: 65%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .Featuring-movie  .movie-descriptions p{
+        font-size: 1.1em;
+        line-height: 1.8;
+        text-align: left;
+        margin-right: auto;    
+    }
+
+    
+
+
+    .movie-grid {
+        flex-direction: column;
+    }
+    .movie ,
+    .movie .movie-posters{
+        width: 100%;
+        
+    }
+    .movie .movie-descriptions button {
+        padding: 15px 80px;
+        font-size: 1.2em;
+        background-color: #000000;
+        color: #FFFFFF;
+        border: none;
+        width: 100%;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    .solo-movies-together .movie-descriptions button{
+        border-radius: 10px;
+    }
+    .movie{
+        background-color: #4dccbd;
+    }
+
+
+    .solo-movies-together {
+        flex-direction: column;
+        background-color: #4dccbd;
+        
+    }
+
+    .solo-movies-together .movie-posters,
+    .solo-movies-together .movie-descriptions {
+        width: 100%;
+        
+    }
+        
+        header nav {
+            display: none;
+        }
+    
+        
+        header {
+            justify-content: space-between;
+        }
+    
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 720px) and (max-width: 1023px) {
+
+
+    body {
+        font-family: 'Lato', sans-serif;
+        background-color: #FFFFFF;
+        color: #ffffff;
+        
+    }
+
+
+
+    
+    header {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        padding: 16px 32px;
+        width: 1354px;
+        background-color: #eef36a;
+        
+    }
+
+    
+    header h1 {
+        font-size: 3em;
+        margin: 0;
+        flex: 1;
+        text-align: left; 
+        color: #000000;
+    }
+
+    
+    header nav {
+        display: flex;
+        gap: 20px; 
+        flex: 1; 
+        justify-content: center; 
+        margin-left: -590px; 
+        font-size: 10px;
+    }
+
+
+    header nav a {
+        
+        color: #000000;
+        margin-right: -11.10px;
+        margin-left: 10px;
+
+        
+        font-size: 10px;
+        text-align: center;
+    }
+
+
+
+
+
+
+    
+    .search-button {
+        padding: 8px;
+        padding-right: 100px;
+        font-size: 1em;
+        flex: 1; 
+        max-width: 110px;
+        text-align: left;
+        border-radius: 10px;
+    }
+
+
+    
+
+    
+
+    .MOVIE-LIST {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        margin-top: 32px;
+        padding: 0 32px;
+        bottom: auto;
+    }
+
+    .movie, .solo-movies-together {
+        background-color: #4dccbd;
+        padding: 16px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 55%; 
+        
+    }
+
+    .Featuring-movie  {
+        background-color: #4dccbd;
+        padding: 16px;
+        border-radius: 8px;
+        box-shadow: 10px 10px grey;
+        display: flex;
+        flex-direction: column;
+        width: 30%; 
+        text-align: center;
+        height: 669px;
+        
+    }
+
+
+
+    .Featuring-movie .movie-descriptions button {
+        width: 35%;
+        padding: 30px 60px;
+        font-size: 2.2em;
+        background-color: #000000;
+        color: #ffffff;
+        border: none;
+        margin-left: 1000px;
+        margin-top: 100px;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 20px;
+        align-self: flex-start;
+        margin: 40px;
+    }
+
+ 
+    .movie-grid {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        margin-top: 32px;
+        margin-right: 900px;
+        position: relative;
+        right: 710px;
+        position: relative;
+        bottom: 25px;
+        width: 30%;
+        
+    }
+
+
+
+
+
+
+
+    .movie {
+        width: 100%;
+        background-color: #4dccbd;
+        padding: 16px;
+        border-radius: 8px;
+        display: flex;
+        box-shadow: 10px 10px grey;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0%;
+        position: relative;
+        top: 30px;
+        height: 670px;
+        
+    }
+
+
+
+    .solo-movies-together {
+        display: flex;
+        background-color: #4dccbd;
+        padding: 3px;
+        margin-top: 32px;
+        
+        position: relative;
+        top: -50px;
+        width: 29%;
+        box-shadow: 10px 10px grey;
+        border-radius: 8px;
+        gap: 16px;
+        margin-right: -120px;
+       
+        
+    }
+
+
+    .solo-movies-together .movie-posters {
+        width: 100px;
+        
+    }
+
+
+
+
+    .hi-movie{
+                background-color: #4dccbd;
+        padding: 16px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        width: 55%; 
+        text-align: center;
+        height: 600px;
+    }
+
+    
+
+
+
+    
+    .movie .movie-postersr,
+    .Featuring-movie  .movie-posters {
+        width: 100%;
+        height: auto;
+        margin-bottom: 16px;
+        
+    }
+
+    .Featuring-movie  .movie-posters {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2px;
+    }
+
+
+    
+    .movie .movie-descriptions button,
+    .Featuring-movie  .movie-descriptions button,
+    .solo-movies-together .movie-descriptions button {
+        padding: 15px 80px;
+        font-size: 1.2em;
+        background-color: #000000;
+        color: #FFFFFF;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        width: auto; 
+    }
+
+
+    .Featuring-movie  .movie-descriptions button {
+        padding: 15px 80px;
+        font-size: 1.2em;
+        background-color: #000000;
+        color: #FFFFFF;
+        width: 100px;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        margin-left: 30px;
+
+         
+        
+
+    }
+}
+
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+    body {
+        font-family: 'Lato', sans-serif;
+        background-color: #FFFFFF;
+        color: #ffffff;
+    }
+    
+    
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+        background-color: #eef36a;
+        color: #000000;
+        flex-wrap: wrap;
+        
+    }
+    
+    header h1 {
+        font-family: 'Teko', sans-serif;
+        font-size: 2em;
+    }
+    
+    header nav a {
+        margin: 0 15px;
+        color: #000000;
+        text-decoration: none;
+        font-size: 1em;
+        text-align: center;
+    }
+    
+    .search-button {
+        padding: 5px;
+        font-size: 1em;
+        border-radius: 25px;
+    }
+    
+    
+    .MOVIE-LIST {
+        padding: 48px;
+        max-width: 900px;
+        margin: auto;
+    }
+    
+    
+    .Featuring-movie {
+        display: flex;
+        flex-direction: column;
+        background-color: #4dccbd;
+        padding: 1px;
+        box-shadow: 10px 10px grey;
+        text-align: left;
+        padding-left: 10px;
+        
+        
+        
+    }
+    
+    .Featuring-movie .movie-posters {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 16px;
+        max-height: 400px;
+        object-fit: cover;
+        
+    }
+    
+    .Featuring-movie .movie-descriptions {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .Featuring-movie .movie-descriptions p {
+        width: 70%;
+        font-size: 1.2em;
+        line-height: 1.8;
+    }
+    
+    .Featuring-movie .movie-descriptions button {
+        width: 35%;
+        padding: 30px 60px;
+        font-size: 2.2em;
+        background-color: #000000;
+        color: #ffffff;
+        border: none;
+        margin-left: 100px;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 20px;
+        align-self: flex-start;
+        margin: 40px;
+    }
+    
+    
+    .movie-grid {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        margin-top: 32px;
+    }
+    
+    .movie {
+        width: 48%;
+        background-color: #4dccbd;
+        padding: 16px;
+        border-radius: 8px;
+
+        display: flex;
+        box-shadow: 10px 10px grey;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .movie .movie-posters {
+        width: 100%;
+        height: auto;
+        margin-bottom: 16px;
+    }
+    
+    .movie .movie-descriptions p {
+        font-size: 1.1em;
+        line-height: 1.8;
+        margin-bottom: 16px;
+    }
+    
+    .movie .movie-descriptions button {
+        padding: 15px 100px;
+        font-size: 1.2em;
+        background-color: #000000;
+        color: #FFFFFF;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        float: center;
+        border-radius: 10px;
+        height: 100px;
+        width: -100px;
+        margin-left: 60px;
+        margin-right: 40px;
+        
+
+    }
+    
+    
+    .solo-movies-together {
+        display: flex;
+        background-color: #4dccbd;
+        padding: 3px;
+        margin-top: 32px;
+        box-shadow: 10px 10px grey;
+        border-radius: 8px;
+        gap: 16px;
+    }
+    
+    .solo-movies-together .movie-posters {
+        width: 50%;
+        height: auto;
+    }
+    
+    .solo-movies-together .movie-descriptions {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .solo-movies-together.movie-descriptions p {
+        font-size: 1.1em;
+        line-height: 1.8;
+    }
+    
+    .solo-movies-together .movie-descriptions button {
+        padding: 15px 60px;
+        font-size: 1.2em;
+        background-color: #000000;
+        color: #FFFFFF;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        height: 100px;
+        width: -100px;
+    }
+}
